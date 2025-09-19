@@ -5,7 +5,7 @@ This project is an interactive restaurant ordering application built based on a 
 I first recreated the Figma design using HTML and CSS to build a mobile-friendly, pixel-perfect interface. Then, I added interactivity with JavaScript to allow users to add and remove menu items, proceed to checkout, and simulate payment, displaying a success message after completing the order.
 
 ### Features
-* **HTML & CSS:** Pixel-perfect, responsive UI based on the Figma design.  
+* **HTML & CSS:** UI based on the Figma design.  
 * **JavaScript:**  
   * Add and remove menu items to/from the order.  
   * Calculate total price dynamically.  
