@@ -5,6 +5,7 @@ const menuEl = document.getElementById('menu')
 const orderSectionEl = document.getElementById('order')
 const paymentModalEl = document.getElementById('payment-modal')
 const nameInput = document.getElementById('name-input')
+const paymentForm = document.getElementById('payment-form')
 
 
 let selectedItems = []
@@ -37,11 +38,13 @@ document.addEventListener('click',  function(e){
      else if(e.target.id == 'complete-order'){
         paymentModalEl.style.display = 'block'
      }
-      else if(e.target.id == 'pay-btn'){
-        paymentModalEl.style.display = 'none'
-        renderSuccessionMessage(nameInput)
-        
-     }
+})
+
+paymentForm.addEventListener('submit', function(e){
+    e.preventDefault()
+    paymentModalEl.style.display = 'none'
+    renderSuccessionMessage(nameInput.value)
+    selectedItems = []
 })
 
 

@@ -18,11 +18,13 @@
                  <!--order status come here-->
             </section>
             <div class="payment-modal" id="payment-modal">
-                <h2>Enter card details</h2>
-                <input placeholder="Enter your name"  required   aria-label="name" id="name-input"/>
-                <input placeholder="Enter card number" required  aria-label="card number"/>
-                <input placeholder="Enter CVV" required aria-label="cvv number"/>
-                <button type="submit" id="pay-btn" class="btn">Pay</button>
+                <form id="payment-form">
+                    <h2>Enter card details</h2>
+                    <input placeholder="Enter your name"  required  aria-label="name" id="name-input"/>
+                    <input placeholder="Enter card number" required aria-label="card number"/>
+                    <input placeholder="Enter CVV" required aria-label="cvv number"/>
+                    <button type="submit" id="pay-btn" class="btn">Pay</button>
+                </form>
             </div>
         </container>
 	<script src="index.js" type="module"></script>
